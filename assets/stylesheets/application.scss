@@ -2,6 +2,91 @@ body {
   font-family: Helvetica;
 }
 .app {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: flex;
+  height: 100vh;
+}
+
+.left-side{
+  background-color: rgb(220,220,220);
+  width:100px;
+  padding:20px;
+  img{
+    width: 60px;
+  }
+}
+
+.channel-side{
+  background-color: rgb(240,240,240);
+  padding:20px 0px 20px 20px;
+  width:250px;
+  h4{
+    margin-bottom:40px;
+  }
+  div{
+    cursor: pointer;
+    margin-bottom:5px;
+  }
+}
+
+.channel-container{
+  padding:20px 0px 0px 20px;
+  flex-grow:1;
+}
+
+.selected{
+  font-weight:bold;
+}
+
+
+.channel-title{
+  padding: 0px 5px;
+  border-bottom: 1px solid rgb(230,230,230);
+}
+
+.channel-content{
+  padding: 30px;
+  border-bottom: 1px solid rgb(230,230,230);
+  height: 80vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.message{
+  margin-bottom: 10px;
+}
+
+ .message-author{
+  font-weight: bold;
+  color: #fba96c;
+ }
+
+.message-date{
+  font-size: 10px;
+  font-style: italic;
+  color: rgb(150,150,150);
+ }
+
+
+.custom-form-inline{
+  display: flex;
+  padding: 10px 10px 10px 0;
+}
+
+.input-inline{
+  flex-grow:1;
+  height: 40px;
+  border-radius: 3px 0 0 3px;
+  border-width: 1px;
+  border-color: rgb(230,230,230);
+  border-style: solid;
+}
+
+.btn-inline{
+  width:80px;
+  background-color: #ffba87;
+  border: 1px solid #ffba87;
+  border-radius: 0 3px 3px 0;
+  &:hover{
+    background-color: #fba96c;
+  }
 }
